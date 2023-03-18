@@ -28,6 +28,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             }, 0)}
           </div>
         </Stack>
+        <div>LN buy button here </div>
       </Offcanvas.Body>
     </Offcanvas>
   );
