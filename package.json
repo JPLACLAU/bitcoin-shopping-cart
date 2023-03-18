@@ -2,9 +2,9 @@
   "name": "bitcoin-shopping-cart",
   "homepage": "https://jplaclau.github.io/bitcoin-shopping-cart",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
-  "author": "Hesbon Osoro <hesbonosoro1@gmail.com>",
+  "author": "Jean-Paul Laclau <laclaujeanpaul@gmail.com>",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
