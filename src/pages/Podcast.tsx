@@ -3,13 +3,18 @@ import { YouTube, GitHub, LinkedIn, Twitter } from '@material-ui/icons';
 import './about.css';
 import MetaData from './MetaData';
 import { requestProvider } from 'webln';
+import { useState } from 'react';
 
 export const Podcast = () => {
   const visitGithub = () => {
-    window.location.replace('https://github.com/hesbon-osoro');
+    window.location.replace('https://github.com/jplaclau');
   };
+  const [nodeInfo, setNodeInfo] = useState('');
+
   async function loadRequestProvider() {
     const webln = await requestProvider();
+    const nodeInfo = await webln.getInfo();
+    setNodeInfo(nodeInfo.node.alias);
   }
   return (
     <div className="aboutSection">
@@ -39,6 +44,7 @@ export const Podcast = () => {
             <button onClick={loadRequestProvider}>
               Connect to LN⚡ provider
             </button>
+            <p> Connected to: {nodeInfo}</p>
             <br />
             Play button here to listen to the Podcast(and start paying sats?)
           </div>
