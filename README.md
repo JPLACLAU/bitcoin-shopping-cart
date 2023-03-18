@@ -17,15 +17,9 @@ This is just an app made for testing and experimenting.
 - CSS
 - HTML
 
-# Project Setup
-
-# Navigate to directory and install packages
-
-cd shopping-cart && yarn
-
-# Start the app
-
-yarn dev
+### THANKS
 
 Thanks to https://github.com/hesbon-osoro/shopping-cart.git
 for the open source shop frame
+webln guide: https://www.youtube.com/watch?v=fTzW9iJhiNg
+webln repo: https://github.com/theGrape1337/webln-tutorial
