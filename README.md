@@ -1,14 +1,9 @@
 # Shopping Cart
 
-[![Shopping Cart](assets/shopping-cart.png)](https://reactts-shopping-cart.netlify.app/)
+A Shopping Cart in React and TypeScript.
+Lightning network payments and nostr messagin system are to be implemented.
 
-[![Store](assets/shopping-cart-store.png)](https://reactts-shopping-cart.netlify.app/)
-
-[![Cart](assets/shopping-cart-cart.png)](https://reactts-shopping-cart.netlify.app/)
-
-[![About](assets/.png)](https://reactts-shopping-cart.netlify.app/)
-
-A Shopping Cart in React and TypeScript
+This is just an app made for testing and experimenting.
 
 ## Technologies
 
@@ -24,13 +19,13 @@ A Shopping Cart in React and TypeScript
 
 # Project Setup
 
-```code
-# Clone this repo
-git clone https://github.com/hesbon-osoro/shopping-cart.git
-
 # Navigate to directory and install packages
+
 cd shopping-cart && yarn
 
 # Start the app
+
 yarn dev
-```
+
+Thanks to https://github.com/hesbon-osoro/shopping-cart.git
+for the open source shop frame
