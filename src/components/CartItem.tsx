@@ -30,10 +30,10 @@ export function CartItem({ id, quantity }: CartItemProps) {
           )}
         </div>
         <div className="text-muted" style={{ fontSize: '.75rem' }}>
-          {formatCurrency(item?.price || 0)}
+          {item?.price || 0}
         </div>
       </div>
-      <div>{formatCurrency(item?.price || 0 * quantity)}</div>
+      <div>{item?.price || 0 * quantity}</div>
       <Button
         variant="outline-danger"
         size="sm"
