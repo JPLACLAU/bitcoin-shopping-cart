@@ -19,9 +19,9 @@ export const Home = () => {
               Shop <CgMouse />
             </span>
           </Link>
-          <Link to="/about">
+          <Link to="/podcast">
             <span className="button">
-              About <CgMouse />
+              Podcast <CgMouse />
             </span>
           </Link>
         </div>

@@ -13,7 +13,7 @@ export const Podcast = () => {
       <div></div>
       <div className="aboutSectionGradient"></div>
       <div className="aboutSectionContainer">
-        <Typography component="h1">About Me</Typography>
+        <Typography component="h1">Bitcoin Podcast</Typography>
         <div>
           <div>
             <Avatar
@@ -21,12 +21,12 @@ export const Podcast = () => {
               src="https://i.postimg.cc/tCm4kf1b/photo-2022-03-09-20-40-16-removebg-preview-modified.png"
               alt="Founder"
             />
-            <Typography>Hesbon Osoro</Typography>
+            <Typography>The Bitcoins's developers' podcast</Typography>
             <Button onClick={visitGithub}>Visit Github</Button>
             <span>
-              MERN Stack Developer. <br />
-              Always Learning and Improving. <br />
-              Coding for the Web.
+              Bitcoin Podcast <br />
+              Always Improving. <br />
+              Giving hope.
             </span>
           </div>
           <div className="aboutSectionContainer2">
