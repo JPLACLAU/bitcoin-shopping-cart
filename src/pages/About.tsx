@@ -1,11 +1,11 @@
 import { Button, Typography, Avatar } from '@material-ui/core';
-import { YouTube, GitHub, LinkedIn, Twitter } from '@material-ui/icons';
+import { GitHub, LinkedIn, Twitter } from '@material-ui/icons';
 import './about.css';
 import MetaData from './MetaData';
 
 export const About = () => {
   const visitGithub = () => {
-    window.location.replace('https://github.com/hesbon-osoro');
+    window.location.replace('https://github.com/jplaclau');
   };
   return (
     <div className="aboutSection">
@@ -18,46 +18,45 @@ export const About = () => {
           <div>
             <Avatar
               style={{ width: '10vmax', height: '10vmax', margin: '2vmax 0' }}
-              src="https://i.postimg.cc/tCm4kf1b/photo-2022-03-09-20-40-16-removebg-preview-modified.png"
+              src="./src/assets/JPL.png"
               alt="Founder"
             />
-            <Typography>Hesbon Osoro</Typography>
+            <Typography>Jean-Paul Laclau</Typography>
             <Button onClick={visitGithub}>Visit Github</Button>
             <span>
-              MERN Stack Developer. <br />
-              Always Learning and Improving. <br />
-              Coding for the Web.
+              This app made during "The summer of Bitcoin". It will test ideas
+              for my proposal at getAlby. LN integration is done via webln. I'll
+              be experimenting on a merge with Nostr private messaging. The
+              Nostr implementation is to be presented on the Bolt Fun Hackaton
+              march 2023, the project's name is "LNostrshop".
             </span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Connect With Me</Typography>
+
             <a
-              href="https://www.youtube.com/channel/UCgHKQfyNh8thOZtS4kfQG-A"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <YouTube className="youtubeSvgIcon" />
-            </a>
-            <a
-              href="https://github.com/hesbon-osoro"
+              href="https://github.com/jplaclau"
               target="_blank"
               rel="noreferrer noopener"
             >
               <GitHub className="githubSvgIcon" />
             </a>
             <a
-              href="https://www.linkedin.com/in/hesbon-osoro"
+              href="https://www.linkedin.com/in/jplaclau/"
               target="_blank"
               rel="noreferrer noopener"
             >
               <LinkedIn className="linkedinSvgIcon" />
             </a>
             <a
-              href="https://twitter.com/wazimu_hb"
+              href="https://iris.to/jplaclau"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <Twitter className="twitterSvgIcon" />
+              <Twitter className="nostrSvgIcon" />
+            </a>
+            <a>
+              <p>We need Nostr Icons on node module: @material-ui/icons</p>
             </a>
           </div>
         </div>
