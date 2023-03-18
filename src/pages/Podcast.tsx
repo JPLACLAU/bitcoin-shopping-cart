@@ -2,11 +2,15 @@ import { Button, Typography, Avatar } from '@material-ui/core';
 import { YouTube, GitHub, LinkedIn, Twitter } from '@material-ui/icons';
 import './about.css';
 import MetaData from './MetaData';
+import { requestProvider } from 'webln';
 
 export const Podcast = () => {
   const visitGithub = () => {
     window.location.replace('https://github.com/hesbon-osoro');
   };
+  async function loadRequestProvider() {
+    const webln = await requestProvider();
+  }
   return (
     <div className="aboutSection">
       <MetaData title="About" />
@@ -32,6 +36,11 @@ export const Podcast = () => {
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Connect to the Podcast</Typography>
+            <button onClick={loadRequestProvider}>
+              Connect to LN⚡ provider
+            </button>
+            <br />
+            Play button here to listen to the Podcast(and start paying sats?)
           </div>
         </div>
       </div>
