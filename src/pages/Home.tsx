@@ -8,13 +8,23 @@ export const Home = () => {
     <>
       <MetaData title="Shopping Store" />
       <div className="banner">
-        <p>Welcome to Shopping Store</p>
-        <h1>SHOP AMAZING PRODUCTS IN THE STORE</h1>
-        <Link to="/store">
-          <span className="button">
-            Shop <CgMouse />
-          </span>
-        </Link>
+        <p>
+          This app is for testing different metadata types in lightning network
+          payments
+        </p>
+        <h1>“If only you knew the power of the Lightning Network...”</h1>
+        <div className="button-container">
+          <Link to="/store">
+            <span className="button">
+              Shop <CgMouse />
+            </span>
+          </Link>
+          <Link to="/about">
+            <span className="button">
+              About <CgMouse />
+            </span>
+          </Link>
+        </div>
       </div>
     </>
   );

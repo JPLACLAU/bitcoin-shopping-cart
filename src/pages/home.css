@@ -1,3 +1,32 @@
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.button-container a {
+  margin: 0 20px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #a8840d;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font: 500 1vmax 'Roboto';
+}
+
+.button:hover {
+  background-color: #890da8;
+  font: 500 1vmax 'Roboto';
+}
+
+.button svg {
+  margin-left: 0.5rem;
+}
 .banner {
   background-image: url('../assets/cover.jfif');
   background-position: center;

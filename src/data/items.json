@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Bitcoin Sticker #1 (x5)",
+    "name": "Bitcoin Sticker #1 (5units)",
     "price": 25000,
     "imgUrl": "bitcoin-sticker-n1.jpeg"
   },
   {
     "id": 2,
-    "name": "Bitcoin Sticker #2 (x5)",
+    "name": "Bitcoin Sticker #2 (5units)",
     "price": 35000,
     "imgUrl": "bitcoin-sticker-n2.jpeg"
   },
   {
     "id": 3,
-    "name": "Bitcoin Sticker #3 (x5)",
+    "name": "Bitcoin Sticker #3 (5units)",
     "price": 60000,
     "imgUrl": "bitcoin-sticker-n3.jpeg"
   },
