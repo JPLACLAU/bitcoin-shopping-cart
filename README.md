@@ -6,7 +6,7 @@
 
 [![Cart](assets/shopping-cart-cart.png)](https://reactts-shopping-cart.netlify.app/)
 
-[![About](assets/shopping-cart-about.png)](https://reactts-shopping-cart.netlify.app/)
+[![About](assets/.png)](https://reactts-shopping-cart.netlify.app/)
 
 A Shopping Cart in React and TypeScript
 

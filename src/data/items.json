@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "Book",
-    "price": 10.99,
-    "imgUrl": "book.jpg"
+    "name": "Bitcoin Sticker #1 (x5)",
+    "price": 25000,
+    "imgUrl": "bitcoin-sticker-n1.jpeg"
   },
   {
     "id": 2,
-    "name": "Computer",
-    "price": 1199,
-    "imgUrl": "computer.jpg"
+    "name": "Bitcoin Sticker #2 (x5)",
+    "price": 35000,
+    "imgUrl": "bitcoin-sticker-n2.jpeg"
   },
   {
     "id": 3,
-    "name": "Banana",
-    "price": 1.05,
-    "imgUrl": "banana.jpg"
+    "name": "Bitcoin Sticker #3 (x5)",
+    "price": 60000,
+    "imgUrl": "bitcoin-sticker-n3.jpeg"
   },
   {
     "id": 4,
-    "name": "Car",
-    "price": 1400,
-    "imgUrl": "car.jpg"
+    "name": "Private mail in Argentina",
+    "price": 21000,
+    "imgUrl": "privatemail.jpg"
   }
 ]
