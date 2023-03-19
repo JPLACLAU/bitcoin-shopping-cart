@@ -27,7 +27,7 @@ export const Podcast = () => {
           <div>
             <Avatar
               style={{ width: '10vmax', height: '10vmax', margin: '2vmax 0' }}
-              src="./src/assets/bitcoinpodcast.jpeg"
+              src="bitcoinpodcast.jpeg"
               alt="Founder"
             />
             <Typography>The Bitcoins's developers' podcast</Typography>

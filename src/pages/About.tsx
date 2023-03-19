@@ -18,7 +18,7 @@ export const About = () => {
           <div>
             <Avatar
               style={{ width: '10vmax', height: '10vmax', margin: '2vmax 0' }}
-              src="./src/assets/JPL.png"
+              src="JPL.png"
               alt="Founder"
             />
             <Typography>Jean-Paul Laclau</Typography>
