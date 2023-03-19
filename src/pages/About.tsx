@@ -24,11 +24,15 @@ export const About = () => {
             <Typography>Jean-Paul Laclau</Typography>
             <Button onClick={visitGithub}>Visit Github</Button>
             <span>
-              This app made during "The summer of Bitcoin". It will test ideas
-              for my proposal at getAlby. LN integration is done via webln. I'll
-              be experimenting on a merge with Nostr private messaging. The
-              Nostr implementation is to be presented on the Bolt Fun Hackaton
-              march 2023, the project's name is "LNostrshop".
+              LNostrshop & metadata tests. <br />
+              LN integration is done via webln. <br />
+              App made during "The summer of Bitcoin". <br />
+              It is part of an internship proposal that I will send to getAlby.{' '}
+              <br />
+              I will also be doing a mashup with with Nostr private messaging.
+              <br />
+              The Nostr implementation is to be presented on the Bolt Fun
+              Hackaton. <br />
             </span>
           </div>
           <div className="aboutSectionContainer2">
