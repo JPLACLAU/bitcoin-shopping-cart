@@ -4,7 +4,7 @@ import { formatCurrency } from '../utilities/formatCurrency';
 import { CartItem } from './CartItem';
 import storeItems from '../data/items.json';
 import { requestProvider } from 'webln';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -14,25 +14,25 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
   const { closeCart, cartItems } = useShoppingCart();
   const [nodeInfo, setNodeInfo] = useState('');
   const [amount, setAmount] = useState(0);
-  const [webln, setWebln] = useState('');
   const [paymentRequest, setPaymentRequest] = useState('');
 
   async function loadRequestProvider() {
     const webln = await requestProvider();
     const nodeInfo = await webln.getInfo();
     setNodeInfo(nodeInfo.node.alias);
-    setWebln(webln);
     console.log(nodeInfo);
   }
 
-  async function handleInvoice(e) {
-    e.preventDefault();
+  async function handleInvoice(event: any) {
+    const webln = await requestProvider();
+    event.preventDefault();
     const invoice = await webln.makeInvoice(amount);
     console.log(invoice);
     setPaymentRequest(invoice.paymentRequest);
   }
 
   async function handlePayment() {
+    const webln = await requestProvider();
     await webln.sendPayment(paymentRequest);
   }
 
@@ -63,7 +63,7 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
           <form onSubmit={handleInvoice}>
             <input
               type="number"
-              onChange={e => setAmount(e.target.value)}
+              onChange={e => setAmount(parseInt(e.target.value))}
               value={amount}
               required
             />{' '}
